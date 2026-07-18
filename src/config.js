@@ -47,9 +47,14 @@ export const CONFIG = {
     venueAddress: 'SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Tỉnh Hưng Yên',
   },
 
-  // Lịch trình ngày cưới - để trống thì section tự ẩn; điền khi đã chốt giờ
-  // Ví dụ: { time: '09:00', label: 'Đón khách' },
-  schedule: [],
+  // Lịch trình ngày cưới - sửa '--:--' thành giờ thật khi đã chốt
+  schedule: [
+    { time: '--:--', label: 'Đón khách' },
+    { time: '--:--', label: 'Làm lễ Vu Quy' },
+    { time: '--:--', label: 'Khai tiệc' },
+    { time: '--:--', label: 'Giao lưu, chụp ảnh cùng gia đình' },
+    { time: '--:--', label: 'Kết thúc' },
+  ],
 
   // Album ảnh cưới - ảnh đặt trong thư mục public/photos/
   photos: [

@@ -10,7 +10,7 @@ function SealBadge() {
           src="/photos/TAW07417.jpg"
           alt="Đức Anh và Thanh Mai"
           className="max-w-none"
-          style={{ width: '205%', marginLeft: '-57%', marginTop: '-119%' }}
+          style={{ width: '205%', marginLeft: '-45%', marginTop: '-119%' }}
         />
       </div>
     </div>
