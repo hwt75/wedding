@@ -1,0 +1,17 @@
+# dependencies / build
+node_modules/
+dist/
+
+# env - chứa key Supabase, không đưa lên git
+.env
+.env.local
+
+# file nguồn dung lượng lớn (ảnh gốc chưa nén)
+anh.png
+
+# hệ điều hành / editor
+.DS_Store
+Thumbs.db
+
+# cấu hình cục bộ của Claude Code
+.claude/settings.local.json

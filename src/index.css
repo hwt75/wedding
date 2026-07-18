@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine: #7c151a;
+  --color-wine-dark: #5e0f13;
+  --color-wine-light: #8a1a20;
+  --color-gold: #d4af37;
+  --color-gold-dark: #b8952a;
+  --color-cream: #fffaf7;
+  --color-inkbrown: #6d5f60;
+  --color-mute: #a08c8d;
+
+  --font-script: "Great Vibes", cursive;
+  --font-corinthia: "Corinthia", cursive;
+  --font-italiana: "Italiana", serif;
+  --font-alex: "Alex Brush", cursive;
+  --font-display: "Prata", "Times New Roman", serif;
+  --font-script2: "Dancing Script", cursive;
+  --font-pattaya: "Pattaya", cursive;
+  --font-serif2: "Playfair Display", "Times New Roman", serif;
+  --font-times: "Times New Roman", Times, serif;
+  --font-cormorant: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --animate-shimmer: shimmer 2.6s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
+  --animate-float: float 3.2s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    100% { transform: translateX(600%) skewX(-20deg); }
+  }
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(124, 21, 26, 0.45); }
+    70% { box-shadow: 0 0 0 12px rgba(124, 21, 26, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(124, 21, 26, 0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ece2dc;
+  font-family: var(--font-sans);
+  color: #2b2224;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* thanh cuộn mảnh cho khung thiệp */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: rgba(124, 21, 26, 0.35); border-radius: 999px; }
