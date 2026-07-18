@@ -3,6 +3,7 @@ import { CONFIG } from '../config'
 import { SectionBand } from './ui'
 
 export default function Schedule() {
+  if (CONFIG.schedule.length === 0) return null
   return (
     <section>
       <SectionBand>Lịch trình ngày cưới</SectionBand>

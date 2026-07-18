@@ -23,8 +23,8 @@ function BankCard({ title, bank }) {
   return (
     <div className="mt-4 rounded-2xl border border-wine/20 bg-white px-4 py-5">
       <h3 className="text-[13px] font-semibold uppercase tracking-wide text-wine">{title}</h3>
-      <div className="mt-1.5 text-[13px] text-inkbrown">{bank.bankName}</div>
-      <div className="my-1.5 font-serif2 text-[21px] font-semibold tracking-[2px]">{bank.account}</div>
+      <div className="mt-1.5 text-[13px] text-inkbrown">{bank.bankName || 'Ngân hàng: đang cập nhật'}</div>
+      <div className="my-1.5 font-serif2 text-[21px] font-semibold tracking-[2px]">{bank.account || '· · · · · · · · ·'}</div>
       <div className="text-[13px] text-inkbrown">{bank.holder}</div>
       <div className="mx-auto my-3 flex h-[130px] w-[130px] items-center justify-center overflow-hidden rounded-xl border border-wine/20 bg-wine/5 text-[12px] leading-relaxed text-wine">
         {bank.qrImage ? (
@@ -39,14 +39,16 @@ function BankCard({ title, bank }) {
           </span>
         )}
       </div>
-      <button
-        onClick={copy}
-        className={`cursor-pointer rounded-full border border-wine px-5 py-1.5 text-[12px] tracking-wide transition-colors ${
-          copied ? 'bg-wine text-white' : 'text-wine hover:bg-wine/5'
-        }`}
-      >
-        {copied ? 'Đã sao chép ✓' : 'Sao chép STK'}
-      </button>
+      {bank.account && (
+        <button
+          onClick={copy}
+          className={`cursor-pointer rounded-full border border-wine px-5 py-1.5 text-[12px] tracking-wide transition-colors ${
+            copied ? 'bg-wine text-white' : 'text-wine hover:bg-wine/5'
+          }`}
+        >
+          {copied ? 'Đã sao chép ✓' : 'Sao chép STK'}
+        </button>
+      )}
     </div>
   )
 }

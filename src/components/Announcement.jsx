@@ -26,7 +26,7 @@ export default function Announcement() {
         <p className="font-times text-sm uppercase leading-loose tracking-[2px] text-inkbrown">
           Trân trọng báo tin
           <br />
-          lễ thành hôn của con chúng tôi
+          {c.eventName} của con chúng tôi
         </p>
 
         <div className="my-7">
@@ -38,7 +38,7 @@ export default function Announcement() {
         </div>
 
         <p className="font-times text-sm uppercase leading-loose tracking-[2px] text-inkbrown">
-          Lễ thành hôn được cử hành tại
+          {c.eventName} được cử hành tại
           <br />
           <span className="text-lg font-semibold text-wine">{c.place}</span>
           <br />

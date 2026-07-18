@@ -207,7 +207,7 @@ export default function Party() {
   return (
     <section className="px-6 py-12 text-center">
       <Reveal>
-        <h3 className="font-serif2 text-[19px] italic text-wine">Tiệc cưới sẽ diễn ra vào lúc</h3>
+        <h3 className="font-serif2 text-[19px] italic text-wine">{p.title}</h3>
         <div className="mt-1 font-serif2 text-[36px] font-semibold text-wine">{p.time}</div>
         <BigDate
           dayOfWeek={p.dayOfWeek}

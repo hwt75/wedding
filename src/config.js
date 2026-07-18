@@ -1,57 +1,55 @@
 /* ============================================================
    CHỈNH TOÀN BỘ THÔNG TIN THIỆP CƯỚI TẠI FILE NÀY
+   Các chỗ ghi '--:--' hoặc '' là CHƯA CÓ thông tin - cần điền!
    ============================================================ */
 
 export const CONFIG = {
   groom: {
-    name: 'Vũ Đức Anh',
-    shortName: 'Đức Anh',
-    role: 'Út nam',
-    father: 'Vũ Văn Hiệp',
-    mother: 'Nguyễn Thị Ánh',
-    address: 'Số 9, Ngõ 102 Trường Chinh, Đống Đa, Hà Nội',
-    bank: { bankName: 'Vietcombank', account: '973052952', holder: 'Vũ Đức Anh', qrImage: '' },
+    name: 'Nguyễn Minh Tuấn Tú',
+    shortName: 'Tuấn Tú',
+    role: 'Chú rể',
+    father: 'Nguyễn Ngọc Quý',
+    mother: 'Phùng Thị Sen',
+    address: '', // TODO: địa chỉ nhà trai (chưa có trên thiệp in)
+    bank: { bankName: '', account: '', holder: 'Nguyễn Minh Tuấn Tú', qrImage: '' }, // TODO: STK chú rể
   },
   bride: {
-    name: 'Đỗ Thị Thanh Mai',
-    shortName: 'Thanh Mai',
-    role: 'Thứ nữ',
-    father: 'Đỗ Văn Tuyên',
-    mother: 'Lê Thị Vân',
-    address: 'Số 32, Phố Đội Cấn, Ba Đình, Hà Nội',
-    bank: { bankName: 'VietinBank', account: '7572658432', holder: 'Đỗ Thị Thanh Mai', qrImage: '' },
+    name: 'Bùi Hương Giang',
+    shortName: 'Hương Giang',
+    role: 'Cô dâu',
+    father: 'Bùi Văn Thắng',
+    mother: 'Phạm Thị Hoa',
+    address: 'SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Tỉnh Hưng Yên',
+    bank: { bankName: '', account: '', holder: 'Bùi Hương Giang', qrImage: '' }, // TODO: STK cô dâu
   },
 
-  // Lễ thành hôn (buổi sáng)
+  // Lễ Vu Quy
   ceremony: {
-    place: 'Tư gia',
-    time: '09:00',
+    eventName: 'Lễ Vu Quy',
+    place: 'Tư gia nhà gái',
+    time: '--:--', // TODO: giờ làm lễ (thiệp in đang để trống)
     dayOfWeek: 'Chủ Nhật',
-    day: 10,
-    month: 5,
+    day: 2,
+    month: 8,
     year: 2026,
-    lunarNote: '(Tức ngày 24 tháng 3 năm Bính Ngọ)',
+    lunarNote: '(Tức ngày 20 tháng 6 năm Bính Ngọ)',
   },
 
-  // Tiệc cưới (buổi tối) - dùng cho đếm ngược, lịch, RSVP
+  // Bữa cơm thân mật - dùng cho đếm ngược, lịch, RSVP
   party: {
-    time: '18:00',
-    welcomeTime: '17:00',
+    title: 'Bữa cơm thân mật sẽ diễn ra vào lúc',
+    time: '--:--', // TODO: giờ khai tiệc
+    welcomeTime: '--:--', // TODO: giờ đón khách
     dayOfWeek: 'Chủ Nhật',
-    date: new Date('2026-05-10T18:00:00+07:00'),
-    lunarNote: '(Tức ngày 24 tháng 3 năm Bính Ngọ)',
-    venueName: 'Queen Bee Luxury',
-    venueAddress: '20 P. Láng Hạ, Láng Hạ, Đống Đa, Hà Nội',
+    date: new Date('2026-08-02T10:00:00+07:00'), // TODO: sửa lại giờ khi đã chốt
+    lunarNote: '(Tức ngày 20 tháng 6 năm Bính Ngọ)',
+    venueName: 'Tư gia nhà gái',
+    venueAddress: 'SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Tỉnh Hưng Yên',
   },
 
-  // Lịch trình ngày cưới
-  schedule: [
-    { time: '17:30', label: 'Đón khách' },
-    { time: '18:30', label: 'Khai tiệc' },
-    { time: '18:45', label: 'Rót rượu, cắt bánh' },
-    { time: '19:00', label: 'Phục vụ món chính' },
-    { time: '21:00', label: 'Kết thúc tiệc' },
-  ],
+  // Lịch trình ngày cưới - để trống thì section tự ẩn; điền khi đã chốt giờ
+  // Ví dụ: { time: '09:00', label: 'Đón khách' },
+  schedule: [],
 
   // Album ảnh cưới - ảnh đặt trong thư mục public/photos/
   photos: [
@@ -80,12 +78,12 @@ export const CONFIG = {
   // Nhạc nền - đặt file vào public/, ví dụ '/nhac-nen.mp3'
   musicSrc: '',
 
-  // Link "Thêm vào lịch" Google Calendar (giờ UTC)
+  // Link "Thêm vào lịch" Google Calendar (giờ UTC; 10:00 VN = 03:00 UTC)
   calendarEvent: {
-    title: 'Tiệc cưới Đức Anh & Thanh Mai',
-    details: 'Trân trọng kính mời bạn tới dự tiệc cưới của Đức Anh & Thanh Mai',
-    startUTC: '20260510T110000Z',
-    endUTC: '20260510T140000Z',
+    title: 'Lễ Vu Quy Tuấn Tú & Hương Giang',
+    details: 'Trân trọng kính mời bạn tới dự bữa cơm thân mật cùng gia đình mừng hạnh phúc Tuấn Tú & Hương Giang',
+    startUTC: '20260802T030000Z',
+    endUTC: '20260802T070000Z',
   },
 }
 
@@ -103,7 +101,7 @@ export const googleCalendarUrl = () => {
 
 export const googleMapsUrl = () =>
   `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    `${CONFIG.party.venueName}, ${CONFIG.party.venueAddress}`
+    `SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Hưng Yên`
   )}`
 
 /* Ảnh placeholder khi chưa có ảnh thật */
