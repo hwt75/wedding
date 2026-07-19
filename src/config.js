@@ -10,7 +10,7 @@ export const CONFIG = {
     role: 'Chú rể',
     father: 'Nguyễn Ngọc Quý',
     mother: 'Phùng Thị Sen',
-    address: '', // TODO: địa chỉ nhà trai (chưa có trên thiệp in)
+    address: 'SN 100 Đường Trần Nhân Tông, Thôn An Đông Xã Kiến Xương, Tỉnh Hưng Yên', // TODO: địa chỉ nhà trai (chưa có trên thiệp in)
     bank: { bankName: '', account: '', holder: 'Nguyễn Minh Tuấn Tú', qrImage: '' }, // TODO: STK chú rể
   },
   bride: {
