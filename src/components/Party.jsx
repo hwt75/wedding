@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CONFIG, googleCalendarUrl } from '../config'
 import { Reveal, ShimmerButton, GhostButton } from './ui'
 import { BigDate } from './Announcement'
-import { addRsvp } from '../lib/supabase'
+import { addRsvp } from '../lib/store'
 
 /* ---------- Lịch tháng cưới ---------- */
 function Calendar() {

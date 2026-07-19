@@ -11,7 +11,7 @@ export default function Schedule() {
         <div className="relative mx-auto max-w-[300px] pl-7 before:absolute before:bottom-1.5 before:left-[7px] before:top-1.5 before:w-px before:bg-gradient-to-b before:from-gold before:to-wine">
           {CONFIG.schedule.map((s, i) => (
             <motion.div
-              key={s.time}
+              key={i}
               className="relative pb-6 last:pb-0"
               initial={{ opacity: 0, x: -18 }}
               whileInView={{ opacity: 1, x: 0 }}

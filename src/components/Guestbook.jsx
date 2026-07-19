@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { fetchWishes, addWish, subscribeWishes } from '../lib/supabase'
+import { fetchWishes, addWish } from '../lib/store'
 
 function fmtTime(iso) {
   const d = new Date(iso)
@@ -15,12 +15,15 @@ export default function Guestbook() {
   const [state, setState] = useState('idle')
 
   useEffect(() => {
-    fetchWishes().then(setWishes).catch(() => {})
-    // lời chúc mới từ khách khác hiện ngay (Supabase realtime)
-    const unsub = subscribeWishes((w) =>
-      setWishes((prev) => (prev.some((x) => x.id === w.id) ? prev : [w, ...prev]))
-    )
-    return unsub
+    let alive = true
+    const load = () => fetchWishes().then((w) => alive && setWishes(w)).catch(() => {})
+    load()
+    // tự làm mới mỗi 30s để thấy lời chúc mới từ khách khác
+    const id = setInterval(load, 30000)
+    return () => {
+      alive = false
+      clearInterval(id)
+    }
   }, [])
 
   const submit = async (e) => {
@@ -29,7 +32,7 @@ export default function Guestbook() {
     setState('sending')
     try {
       const item = await addWish(name.trim(), message.trim())
-      setWishes((prev) => (prev.some((x) => x.id === item.id) ? prev : [item, ...prev]))
+      setWishes((prev) => [item, ...prev])
       setName('')
       setMessage('')
       setState('idle')
@@ -77,9 +80,9 @@ export default function Guestbook() {
 
       <div className="mx-auto mt-7 flex max-w-[360px] flex-col gap-3">
         <AnimatePresence initial={false}>
-          {wishes.map((w) => (
+          {wishes.map((w, i) => (
             <motion.div
-              key={w.id}
+              key={w.id ?? `${w.created_at}-${w.name}-${i}`}
               layout
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
