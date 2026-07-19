@@ -26,9 +26,9 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          # Site chạy ở hwt75.github.io/wedding/ nên base là /wedding/.
-          # Nếu dùng domain riêng (vd tuantuhuonggiang.love) thì đổi thành: /
-          VITE_BASE: /wedding/
+          # Dùng domain riêng tugiangchungmotnha.click -> site ở đường dẫn gốc, base = /
+          # (Nếu quay lại chạy ở hwt75.github.io/wedding/ thì đổi thành: /wedding/)
+          VITE_BASE: /
           # Lấy từ repo Variables (Settings > Secrets and variables > Actions > Variables)
           VITE_SHEET_URL: ${{ vars.VITE_SHEET_URL }}
       - uses: actions/upload-pages-artifact@v3
