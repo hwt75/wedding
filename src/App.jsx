@@ -8,7 +8,6 @@ import Announcement from './components/Announcement'
 import Album from './components/Album'
 import Party from './components/Party'
 import Venue from './components/Venue'
-import Schedule from './components/Schedule'
 import Guestbook from './components/Guestbook'
 import GiftBox from './components/GiftBox'
 import Footer from './components/Footer'
@@ -29,7 +28,6 @@ export default function App() {
         <Album />
         <Party />
         <Venue />
-        <Schedule />
         <Guestbook />
         <GiftBox />
         <Footer />

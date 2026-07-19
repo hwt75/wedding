@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { CONFIG } from '../config'
+import { CONFIG, asset } from '../config'
 
 /* Ảnh cô dâu chú rể bo tròn làm logo thiệp */
 function SealBadge() {
@@ -7,8 +7,8 @@ function SealBadge() {
     <div className="relative h-[92px] w-[92px] rounded-full border-[2.5px] border-gold/80 bg-white p-[3px] shadow-[0_6px_16px_rgba(0,0,0,0.28)]">
       <div className="h-full w-full overflow-hidden rounded-full">
         <img
-          src="/photos/TAW07417.jpg"
-          alt="Đức Anh và Thanh Mai"
+          src={asset('/photos/TAW07417.jpg')}
+          alt="Tuấn Tú và Hương Giang"
           className="max-w-none"
           style={{ width: '205%', marginLeft: '-45%', marginTop: '-119%' }}
         />
@@ -21,7 +21,7 @@ function SealBadge() {
 function HeartDoodle({ className = '', flip = false }) {
   return (
     <img
-      src="/heart-line.png"
+      src={asset('/heart-line.png')}
       alt=""
       aria-hidden="true"
       className={`pointer-events-none absolute w-[230px] opacity-90 md:w-[300px] ${className}`}

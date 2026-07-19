@@ -122,4 +122,8 @@ export function placeholderPhoto(i) {
   return `data:image/svg+xml;utf8,${svg}`
 }
 
-export const photoSrcs = CONFIG.photos.map((p, i) => p || placeholderPhoto(i))
+/* Ghép đường dẫn gốc (base) để ảnh chạy đúng cả trên GitHub Pages lẫn domain riêng.
+   import.meta.env.BASE_URL luôn kết thúc bằng '/'. */
+export const asset = (p) => import.meta.env.BASE_URL + String(p).replace(/^\//, '')
+
+export const photoSrcs = CONFIG.photos.map((p, i) => (p ? asset(p) : placeholderPhoto(i)))

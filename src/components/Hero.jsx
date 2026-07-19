@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { CONFIG } from '../config'
+import { CONFIG, asset } from '../config'
 
 const item = {
   hidden: { opacity: 0, y: 18 },
@@ -10,7 +10,7 @@ const item = {
 function HeartLine() {
   return (
     <img
-      src="/heart-line.png"
+      src={asset('/heart-line.png')}
       alt=""
       aria-hidden="true"
       className="pointer-events-none relative z-0 -mt-16 w-full"

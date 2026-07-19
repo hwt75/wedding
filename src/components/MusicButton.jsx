@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { CONFIG } from '../config'
+import { CONFIG, asset } from '../config'
 
 export default function MusicButton({ autoPlaySignal }) {
   const audioRef = useRef(null)
@@ -31,7 +31,7 @@ export default function MusicButton({ autoPlaySignal }) {
 
   return (
     <>
-      {CONFIG.musicSrc && <audio ref={audioRef} src={CONFIG.musicSrc} loop preload="none" />}
+      {CONFIG.musicSrc && <audio ref={audioRef} src={asset(CONFIG.musicSrc)} loop preload="none" />}
       <button
         onClick={toggle}
         aria-label="Bật / tắt nhạc nền"
