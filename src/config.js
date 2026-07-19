@@ -59,24 +59,12 @@ export const CONFIG = {
   // Album ảnh cưới - ảnh đặt trong thư mục public/photos/
   photos: [
     '/photos/TAW07417.jpg',
-    '/photos/TAW07431.jpg',
-    '/photos/TAW07467.jpg',
-    '/photos/TAW07620.jpg',
-    '/photos/TAW07703.jpg',
-    '/photos/TAW07737.jpg',
-    '/photos/TAW07803.jpg',
-    '/photos/TAW07865.jpg',
-    '/photos/TAW07918.jpg',
-    '/photos/TAW08160.jpg',
-    '/photos/TAW08337.jpg',
-    '/photos/TAW08421.jpg',
-    '/photos/TAW08437.jpg',
-    '/photos/TAW08447.jpg',
-    '/photos/TAW08514.jpg',
-    '/photos/TAW08555.jpg',
-    '/photos/TAW08690.jpg',
     '/photos/TAW08762.jpg',
-    '/photos/TAW08775.jpg',
+    '/photos/TAW07620.jpg',
+    '/photos/TAW08690.jpg',
+    '/photos/TAW08437.jpg',
+    '/photos/TAW07737.jpg',
+
   ],
   albumPreview: 4, // số ô ảnh hiển thị, ô cuối gộp "+N"
 
