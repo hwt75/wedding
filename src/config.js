@@ -81,7 +81,7 @@ export const CONFIG = {
   albumPreview: 4, // số ô ảnh hiển thị, ô cuối gộp "+N"
 
   // Nhạc nền - đặt file vào public/, ví dụ '/nhac-nen.mp3'
-  musicSrc: '',
+  musicSrc: '/music.mp3',
 
   // Link "Thêm vào lịch" Google Calendar (giờ UTC; 10:00 VN = 03:00 UTC)
   calendarEvent: {

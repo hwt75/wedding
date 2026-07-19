@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Envelope from './components/Envelope'
 import Petals from './components/Petals'
 import MusicButton from './components/MusicButton'
+import AutoScroll from './components/AutoScroll'
 import Hero from './components/Hero'
 import Families from './components/Families'
 import Announcement from './components/Announcement'
@@ -20,6 +21,7 @@ export default function App() {
       <Envelope opened={opened} onOpen={() => setOpened(true)} />
       <Petals active={opened} />
       <MusicButton autoPlaySignal={opened} />
+      <AutoScroll active={opened} />
 
       <div className="mx-auto min-h-screen w-full max-w-[480px] overflow-hidden bg-cream shadow-[0_0_40px_rgba(0,0,0,0.18)] md:my-6 md:min-h-0 md:rounded-2xl md:border md:border-wine/15">
         <Hero opened={opened} />
