@@ -25,7 +25,7 @@ export default function AutoScroll({ active }) {
     // nếu không Safari sẽ đứng im vì mỗi khung lại khởi động 1 animation mượt mới
     const prevBehavior = scroller.style.scrollBehavior
     scroller.style.scrollBehavior = 'auto'
-    const SPEED = 26 // tốc độ px mỗi giây (nhỏ = chậm, êm)
+    const SPEED = 48 // tốc độ px mỗi giây (nhỏ = chậm, êm)
     let last = performance.now()
 
     const step = (now) => {
