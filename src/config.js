@@ -32,7 +32,7 @@ export const CONFIG = {
   ceremony: {
     eventName: 'Lễ Vu Quy',
     place: 'Tư gia nhà gái',
-    time: '12:15', // TODO: giờ làm lễ (thiệp in đang để trống)
+    time: '09:00', // TODO: giờ làm lễ (thiệp in đang để trống)
     dayOfWeek: 'Chủ Nhật',
     day: 2,
     month: 8,
@@ -54,7 +54,7 @@ export const CONFIG = {
 
   // Lịch trình ngày cưới - sửa '--:--' thành giờ thật khi đã chốt
   schedule: [
-    { time: '08:00', label: 'Đón khách' },
+    { time: '08:30', label: 'Đón khách' },
     { time: '09:00', label: 'Làm lễ Vu Quy' },
     { time: '12:15', label: 'Khai tiệc' },
     { time: '17:00', label: 'Kết thúc' },
