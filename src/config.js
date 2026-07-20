@@ -37,7 +37,7 @@ export const CONFIG = {
     day: 2,
     month: 8,
     year: 2026,
-    lunarNote: '(Tức ngày 20 tháng 6 năm Bính Ngọ)',
+    lunarNote: '',
   },
 
   // Bữa cơm thân mật - dùng cho đếm ngược, lịch, RSVP
@@ -47,7 +47,7 @@ export const CONFIG = {
     welcomeTime: '08:00', // TODO: giờ đón khách
     dayOfWeek: 'Chủ Nhật',
     date: new Date('2026-08-02T10:00:00+07:00'), // TODO: sửa lại giờ khi đã chốt
-    lunarNote: '(Tức ngày 20 tháng 6 năm Bính Ngọ)',
+    lunarNote: '',
     venueName: 'Tư gia nhà gái',
     venueAddress: 'SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Tỉnh Hưng Yên',
   },

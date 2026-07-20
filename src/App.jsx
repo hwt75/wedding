@@ -31,7 +31,7 @@ export default function App() {
         <Album />
         <Party />
         <Venue />
-        <Schedule />
+        {/* <Schedule /> */}
         <Guestbook />
         <GiftBox />
         <Footer />
