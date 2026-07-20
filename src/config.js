@@ -32,7 +32,7 @@ export const CONFIG = {
   ceremony: {
     eventName: 'Lễ Vu Quy',
     place: 'Tư gia nhà gái',
-    time: '--:--', // TODO: giờ làm lễ (thiệp in đang để trống)
+    time: '12:15', // TODO: giờ làm lễ (thiệp in đang để trống)
     dayOfWeek: 'Chủ Nhật',
     day: 2,
     month: 8,
@@ -43,8 +43,8 @@ export const CONFIG = {
   // Bữa cơm thân mật - dùng cho đếm ngược, lịch, RSVP
   party: {
     title: 'Bữa cơm thân mật sẽ diễn ra vào lúc',
-    time: '--:--', // TODO: giờ khai tiệc
-    welcomeTime: '--:--', // TODO: giờ đón khách
+    time: '12:15', // TODO: giờ khai tiệc
+    welcomeTime: '08:00', // TODO: giờ đón khách
     dayOfWeek: 'Chủ Nhật',
     date: new Date('2026-08-02T10:00:00+07:00'), // TODO: sửa lại giờ khi đã chốt
     lunarNote: '(Tức ngày 20 tháng 6 năm Bính Ngọ)',
@@ -54,11 +54,11 @@ export const CONFIG = {
 
   // Lịch trình ngày cưới - sửa '--:--' thành giờ thật khi đã chốt
   schedule: [
-    { time: '--:--', label: 'Đón khách' },
-    { time: '--:--', label: 'Làm lễ Vu Quy' },
-    { time: '--:--', label: 'Khai tiệc' },
-    { time: '--:--', label: 'Giao lưu, chụp ảnh cùng gia đình' },
-    { time: '--:--', label: 'Kết thúc' },
+    { time: '08:00', label: 'Đón khách' },
+    { time: '09:00', label: 'Làm lễ Vu Quy' },
+    { time: '12:15', label: 'Khai tiệc' },
+    { time: '11:00', label: 'Giao lưu, chụp ảnh cùng gia đình' },
+    { time: '17:00', label: 'Kết thúc' },
   ],
 
   // Album ảnh cưới - ảnh đặt trong thư mục public/photos/
