@@ -33,13 +33,21 @@ function Calendar() {
           return (
             <div
               key={n}
-              className={`rounded-full py-1.5 ${
+              className={`relative rounded-full py-1.5 ${
                 isDay
                   ? 'animate-pulse-ring bg-wine font-semibold text-white'
                   : 'text-inkbrown'
               }`}
             >
-              {isDay ? '♥' : n}
+              {n}
+              {isDay && (
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-2 left-1/2 -translate-x-1/2 text-[11px] leading-none text-gold drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]"
+                >
+                  ♥
+                </span>
+              )}
             </div>
           )
         })}
