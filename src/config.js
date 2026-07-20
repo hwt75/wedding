@@ -57,7 +57,6 @@ export const CONFIG = {
     { time: '08:00', label: 'Đón khách' },
     { time: '09:00', label: 'Làm lễ Vu Quy' },
     { time: '12:15', label: 'Khai tiệc' },
-    { time: '11:00', label: 'Giao lưu, chụp ảnh cùng gia đình' },
     { time: '17:00', label: 'Kết thúc' },
   ],
 

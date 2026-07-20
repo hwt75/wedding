@@ -7,7 +7,7 @@ function SealBadge() {
     <div className="relative h-[92px] w-[92px] rounded-full border-[2.5px] border-gold/80 bg-white p-[3px] shadow-[0_6px_16px_rgba(0,0,0,0.28)]">
       <div className="h-full w-full overflow-hidden rounded-full">
         <img
-          src={asset('/photos/TAW07417.jpg')}
+          src={asset('/photos/TAW08437.jpg')}
           alt="Hương Giang và Tuấn Tú"
           className="max-w-none"
           style={{ width: '205%', marginLeft: '-45%', marginTop: '-119%' }}

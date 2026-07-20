@@ -223,18 +223,6 @@ export default function Party() {
         />
         <p className="text-[13px] italic text-mute">{p.lunarNote}</p>
 
-        <div className="mt-5 flex items-center justify-center gap-8 text-[13px] text-inkbrown">
-          <div>
-            Đón khách{' '}
-            <div className="font-serif2 text-lg font-semibold text-wine">{p.welcomeTime}</div>
-          </div>
-          <div className="h-8 w-px bg-gold/60" />
-          <div>
-            Khai tiệc{' '}
-            <div className="font-serif2 text-lg font-semibold text-wine">{p.time}</div>
-          </div>
-        </div>
-
         <Calendar />
         <Countdown />
 
