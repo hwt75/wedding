@@ -31,24 +31,21 @@ function Calendar() {
           const n = i + 1
           const isDay = n === day
           return (
-            <div
-              key={n}
-              className={`relative rounded-full py-1.5 ${
-                isDay
-                  ? 'animate-pulse-ring bg-wine font-semibold text-white'
-                  : 'text-inkbrown'
-              }`}
-            >
-              {n}
+            <div key={n} className="relative flex h-8 items-center justify-center">
               {isDay && (
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
-                  className="absolute -top-2.5 left-1/2 h-3.5 w-3.5 -translate-x-1/2 fill-gold drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]"
+                  className="absolute h-8 w-8 animate-pulse-ring fill-wine drop-shadow-[0_1px_2px_rgba(0,0,0,0.25)]"
                 >
-                  <path d="M12 21s-7.5-4.35-10-9.28C.5 8.5 2.5 5 6 5c2 0 3.5 1.2 4.2 2.5C10.9 6.2 12.4 5 14.4 5c3.5 0 5.5 3.5 4 6.72C19.5 16.65 12 21 12 21z" />
+                  <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09 C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5 c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" />
                 </svg>
               )}
+              <span
+                className={`relative z-10 ${isDay ? 'pb-1 font-semibold text-white' : 'text-inkbrown'}`}
+              >
+                {n}
+              </span>
             </div>
           )
         })}
