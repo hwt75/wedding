@@ -31,12 +31,12 @@ export default function Announcement() {
 
         <div className="my-7">
           <div className="whitespace-nowrap font-script text-[clamp(24px,8vw,44px)] leading-snug text-wine">
-            {CONFIG.bride.name}
+            {CONFIG.bride.shortName}
           </div>
           <div className="mt-1 text-[12px] uppercase tracking-[3px] text-mute">{CONFIG.bride.role}</div>
           <div className="my-2 font-script text-[30px] text-gold">&amp;</div>
           <div className="whitespace-nowrap font-script text-[clamp(24px,8vw,44px)] leading-snug text-wine">
-            {CONFIG.groom.name}
+            {CONFIG.groom.shortName}
           </div>
           <div className="mt-1 text-[12px] uppercase tracking-[3px] text-mute">{CONFIG.groom.role}</div>
         </div>
