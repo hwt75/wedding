@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CONFIG } from '../config'
+import { CONFIG, asset } from '../config'
 import { SectionBand, Reveal } from './ui'
 
 function BankCard({ title, bank }) {
@@ -28,7 +28,7 @@ function BankCard({ title, bank }) {
       <div className="text-[13px] text-inkbrown">{bank.holder}</div>
       <div className="mx-auto my-3 flex h-[130px] w-[130px] items-center justify-center overflow-hidden rounded-xl border border-wine/20 bg-wine/5 text-[12px] leading-relaxed text-wine">
         {bank.qrImage ? (
-          <img src={bank.qrImage} alt={`QR ${title}`} className="h-full w-full object-contain" />
+          <img src={asset(bank.qrImage)} alt={`QR ${title}`} className="h-full w-full object-contain" />
         ) : (
           <span>
             Ảnh QR

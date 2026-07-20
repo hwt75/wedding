@@ -24,8 +24,7 @@ export const CONFIG = {
       bankName: 'VietinBank - CN Thái Bình - PGD Kiến Xương',
       account: '104872297607',
       holder: 'Bùi Hương Giang',
-      // QR tự sinh qua VietQR (970415 = mã ngân hàng VietinBank)
-      qrImage: 'https://img.vietqr.io/image/970415-104872297607-compact2.png?accountName=BUI%20HUONG%20GIANG',
+      qrImage: '/photos/qr.jpg',
     },
   },
 
