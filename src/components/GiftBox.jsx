@@ -106,7 +106,6 @@ export default function GiftBox() {
                 Hộp quà mừng
               </div>
               <BankCard title={`Cô dâu · ${CONFIG.bride.name}`} bank={CONFIG.bride.bank} />
-              <BankCard title={`Chú rể · ${CONFIG.groom.name}`} bank={CONFIG.groom.bank} />
             </motion.div>
           </motion.div>
         )}
