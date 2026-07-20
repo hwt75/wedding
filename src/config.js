@@ -32,7 +32,7 @@ export const CONFIG = {
   ceremony: {
     eventName: 'Lễ Vu Quy',
     place: 'Tư gia nhà gái',
-    time: '09:00', // TODO: giờ làm lễ (thiệp in đang để trống)
+    time: '12:15', // TODO: giờ làm lễ (thiệp in đang để trống)
     dayOfWeek: 'Chủ Nhật',
     day: 2,
     month: 8,
@@ -43,8 +43,8 @@ export const CONFIG = {
   // Bữa cơm thân mật - dùng cho đếm ngược, lịch, RSVP
   party: {
     title: 'Bữa cơm thân mật sẽ diễn ra vào lúc',
-    time: '12:15', // TODO: giờ khai tiệc
-    welcomeTime: '08:00', // TODO: giờ đón khách
+    time: '09:00', // TODO: giờ khai tiệc
+    welcomeTime: '08:45', // TODO: giờ đón khách
     dayOfWeek: 'Chủ Nhật',
     date: new Date('2026-08-02T10:00:00+07:00'), // TODO: sửa lại giờ khi đã chốt
     lunarNote: '',
