@@ -10,7 +10,7 @@ function SealBadge() {
           src={asset('/photos/TAW08437.jpg')}
           alt="Hương Giang và Tuấn Tú"
           className="max-w-none"
-          style={{ width: '205%', marginLeft: '-45%', marginTop: '-119%' }}
+          style={{ width: '205%', marginLeft: '-50%', marginTop: '-80%' }}
         />
       </div>
     </div>
