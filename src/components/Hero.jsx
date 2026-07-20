@@ -38,11 +38,11 @@ export default function Hero({ opened }) {
         {/* tên cô dâu chú rể */}
         <motion.div custom={1} variants={item} className="mt-24">
           <div className="font-alex text-[50px] leading-tight text-neutral-900">
-            {CONFIG.groom.shortName}
+            {CONFIG.bride.shortName}
           </div>
           <div className="my-1 font-cormorant text-[24px] leading-none text-neutral-900">&amp;</div>
           <div className="font-alex text-[50px] leading-tight text-neutral-900">
-            {CONFIG.bride.shortName}
+            {CONFIG.groom.shortName}
           </div>
         </motion.div>
 

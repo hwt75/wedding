@@ -105,8 +105,8 @@ export default function GiftBox() {
               <div className="inline-block rounded-full bg-wine px-6 py-2 font-times text-[16px] font-semibold uppercase tracking-wide text-white">
                 Hộp quà mừng
               </div>
-              <BankCard title={`Chú rể · ${CONFIG.groom.name}`} bank={CONFIG.groom.bank} />
               <BankCard title={`Cô dâu · ${CONFIG.bride.name}`} bank={CONFIG.bride.bank} />
+              <BankCard title={`Chú rể · ${CONFIG.groom.name}`} bank={CONFIG.groom.bank} />
             </motion.div>
           </motion.div>
         )}

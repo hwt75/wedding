@@ -10,7 +10,7 @@ export default function Footer() {
       </p>
       <div className="mt-3 text-xl text-gold">♡</div>
       <div className="mt-1 font-script text-[30px]">
-        {CONFIG.groom.shortName} &amp; {CONFIG.bride.shortName}
+        {CONFIG.bride.shortName} &amp; {CONFIG.groom.shortName}
       </div>
     </footer>
   )

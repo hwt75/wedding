@@ -30,11 +30,11 @@ export default function Announcement() {
         </p>
 
         <div className="my-7">
-          <div className="font-script text-[44px] leading-snug text-wine">{CONFIG.groom.name}</div>
-          <div className="mt-1 text-[12px] uppercase tracking-[3px] text-mute">{CONFIG.groom.role}</div>
-          <div className="my-2 font-script text-[30px] text-gold">&amp;</div>
           <div className="font-script text-[44px] leading-snug text-wine">{CONFIG.bride.name}</div>
           <div className="mt-1 text-[12px] uppercase tracking-[3px] text-mute">{CONFIG.bride.role}</div>
+          <div className="my-2 font-script text-[30px] text-gold">&amp;</div>
+          <div className="font-script text-[44px] leading-snug text-wine">{CONFIG.groom.name}</div>
+          <div className="mt-1 text-[12px] uppercase tracking-[3px] text-mute">{CONFIG.groom.role}</div>
         </div>
 
         <p className="font-times text-sm uppercase leading-loose tracking-[2px] text-inkbrown">

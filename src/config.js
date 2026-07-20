@@ -73,8 +73,8 @@ export const CONFIG = {
 
   // Link "Thêm vào lịch" Google Calendar (giờ UTC; 10:00 VN = 03:00 UTC)
   calendarEvent: {
-    title: 'Lễ Vu Quy Tuấn Tú & Hương Giang',
-    details: 'Trân trọng kính mời bạn tới dự bữa cơm thân mật cùng gia đình mừng hạnh phúc Tuấn Tú & Hương Giang',
+    title: 'Lễ Vu Quy Hương Giang & Tuấn Tú',
+    details: 'Trân trọng kính mời bạn tới dự bữa cơm thân mật cùng gia đình mừng hạnh phúc Hương Giang & Tuấn Tú',
     startUTC: '20260802T030000Z',
     endUTC: '20260802T070000Z',
   },

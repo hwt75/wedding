@@ -8,7 +8,7 @@ function SealBadge() {
       <div className="h-full w-full overflow-hidden rounded-full">
         <img
           src={asset('/photos/TAW07417.jpg')}
-          alt="Tuấn Tú và Hương Giang"
+          alt="Hương Giang và Tuấn Tú"
           className="max-w-none"
           style={{ width: '205%', marginLeft: '-45%', marginTop: '-119%' }}
         />
@@ -71,9 +71,9 @@ export default function Envelope({ opened, onOpen }) {
               <SealBadge />
 
               <h1 className="mt-9 font-display leading-snug text-wine">
-                <span className="block text-[38px] md:text-[44px]">{CONFIG.groom.shortName}</span>
-                <span className="my-1 block text-[19px] md:text-[21px]">&amp;</span>
                 <span className="block text-[38px] md:text-[44px]">{CONFIG.bride.shortName}</span>
+                <span className="my-1 block text-[19px] md:text-[21px]">&amp;</span>
+                <span className="block text-[38px] md:text-[44px]">{CONFIG.groom.shortName}</span>
               </h1>
 
               <div className="mt-6 flex items-center gap-2.5 text-wine">

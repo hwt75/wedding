@@ -21,16 +21,16 @@ export default function Families() {
       <Reveal className="px-6 py-10">
         <div className="grid grid-cols-2 gap-4">
           <FamilyCard
-            side="Nhà trai"
-            father={CONFIG.groom.father}
-            mother={CONFIG.groom.mother}
-            address={CONFIG.groom.address}
-          />
-          <FamilyCard
             side="Nhà gái"
             father={CONFIG.bride.father}
             mother={CONFIG.bride.mother}
             address={CONFIG.bride.address}
+          />
+          <FamilyCard
+            side="Nhà trai"
+            father={CONFIG.groom.father}
+            mother={CONFIG.groom.mother}
+            address={CONFIG.groom.address}
           />
         </div>
       </Reveal>
