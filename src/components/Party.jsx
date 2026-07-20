@@ -41,12 +41,13 @@ function Calendar() {
             >
               {n}
               {isDay && (
-                <span
+                <svg
+                  viewBox="0 0 24 24"
                   aria-hidden="true"
-                  className="absolute -top-2 left-1/2 -translate-x-1/2 text-[11px] leading-none text-gold drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]"
+                  className="absolute -top-2.5 left-1/2 h-3.5 w-3.5 -translate-x-1/2 fill-gold drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]"
                 >
-                  ♥
-                </span>
+                  <path d="M12 21s-7.5-4.35-10-9.28C.5 8.5 2.5 5 6 5c2 0 3.5 1.2 4.2 2.5C10.9 6.2 12.4 5 14.4 5c3.5 0 5.5 3.5 4 6.72C19.5 16.65 12 21 12 21z" />
+                </svg>
               )}
             </div>
           )
