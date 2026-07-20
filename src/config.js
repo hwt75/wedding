@@ -20,7 +20,13 @@ export const CONFIG = {
     father: 'Bùi Văn Thắng',
     mother: 'Phạm Thị Hoa',
     address: 'SN 1178 Đường Trần Nhân Tông, Thôn Cộng Hòa, Xã Kiến Xương, Tỉnh Hưng Yên',
-    bank: { bankName: '', account: '', holder: 'Bùi Hương Giang', qrImage: '' }, // TODO: STK cô dâu
+    bank: {
+      bankName: 'VietinBank - CN Thái Bình - PGD Kiến Xương',
+      account: '104872297607',
+      holder: 'Bùi Hương Giang',
+      // QR tự sinh qua VietQR (970415 = mã ngân hàng VietinBank)
+      qrImage: 'https://img.vietqr.io/image/970415-104872297607-compact2.png?accountName=BUI%20HUONG%20GIANG',
+    },
   },
 
   // Lễ Vu Quy
